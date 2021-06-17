@@ -9,9 +9,9 @@ const Form = ({getWord}) => {
         getWord(details)
     }
 
-  return <form onSubmit={submitHandler}>
-      <label htmlFor="word">Word</label>
-      <input type="text" name="word" id="word" onChange={(e) => setDetails({...details, word: e.target.value})} value={details.word}/>
+  return <form  className="form-1" onSubmit={submitHandler}>
+      <label htmlFor="word">Type here</label>
+      <input placeholder="Hej hur mår du?..." type="text" name="word" id="word" onChange={(e) => setDetails({...details, word: e.target.value})} value={details.word}/>
 
       <select
             onChange={(e) => setDetails({ ...details, values: e.target.value })} value={details.values}
@@ -24,7 +24,7 @@ const Form = ({getWord}) => {
             <option value="th">Thailänka</option>
           </select>
 
-          <input type="submit" value="TRANSLATE" />
+          <input id="btn" type="submit" value="TRANSLATE" />
 
   </form>;
 };

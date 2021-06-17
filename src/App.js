@@ -4,7 +4,7 @@ import Form from "./components/Form";
 import Show from "./components/Show";
 
 function App() {
-  const [word, setWord] = useState({word: ""});
+  const [word, setWord] = useState({word: "Hej hur mår du?..."});
   //let translatedWord = "";
 
   const getWord = async (details) => {
